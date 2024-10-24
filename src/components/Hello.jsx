@@ -6,8 +6,7 @@ function showMsg() {
 function Hello() {
   return (
     <div>
-      <h1>안녕하십니까 - </h1>
-      <h2>{showMsg()}</h2>
+      <h1>안녕하십니까 - 한강씨</h1>
     </div>
   );
 }
