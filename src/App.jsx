@@ -1,8 +1,14 @@
 import Hello from "./components/Hello";
 function App() {
+  const person = {
+    name: "한강",
+    message: "노벨 축하합니다",
+    emoji: "👍",
+    numbers: [1, 2, 3],
+  }
   return (
     <div className="App">
-      <Hello name="한강수" message="행복하세요." emoji="😀" />
+      <Hello person={person} />
     </div>
   );
 }
