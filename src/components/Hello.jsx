@@ -5,9 +5,10 @@ function showMsg() {
 }
 function Hello(props) {
   console.log(props);
+  const {name, message} = props;
   return (
     <div>
-      <h1>안녕하십니까 - {props.name} - {props.message}</h1>
+      <h1>안녕하십니까 - {name} - {message}</h1>
     </div>
   );
 }
