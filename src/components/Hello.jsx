@@ -7,7 +7,7 @@ function Hello(props) {
   console.log(props);
   return (
     <div>
-      <h1>안녕하십니까 - {props.name}</h1>
+      <h1>안녕하십니까 - {props.name} - {props.message}</h1>
     </div>
   );
 }
