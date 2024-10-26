@@ -1,7 +1,7 @@
 export default function ({ name, price, emoji }) {
   return (
-    <div>
+    <li>
       {emoji} {name} {price}
-    </div>
+    </li>
   );
 }
