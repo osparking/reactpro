@@ -1,3 +1,7 @@
-export default function() {
-    return <div>과일</div>
+export default function ({ name, price, emoji }) {
+  return (
+    <div>
+      {emoji} {name} {price}
+    </div>
+  );
 }
