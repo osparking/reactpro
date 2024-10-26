@@ -11,7 +11,7 @@ export default function Fruits() {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <Fruit />
+          <Fruit name={fruit.name} price={fruit.price} emoji={fruit.emoji} />
         ))}
       </ul>
     </div>
