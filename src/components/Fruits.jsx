@@ -10,7 +10,9 @@ export default function Fruits() {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit}>{fruit}</li>
+          <li key={fruit.name}>
+            {fruit.emoji} {fruit.name} ₩{fruit.price}
+          </li>
         ))}
       </ul>
     </div>
