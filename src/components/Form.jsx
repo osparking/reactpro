@@ -4,7 +4,7 @@ export default function Form() {
   const [name, setName] = useState("");
 
   function handleChange(e) {
-    console.log("name 입력 상자 값 변화됨!");
+    console.log(e);
   }
   return (
     <div>
