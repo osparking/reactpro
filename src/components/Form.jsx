@@ -1,5 +1,9 @@
 export default function Form() {
   return (
-    <div>Form</div>
+    <div>
+      <form>
+        <input type="text" value="name" />
+      </form>
+    </div>
   );
 }
