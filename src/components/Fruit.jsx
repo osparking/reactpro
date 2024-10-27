@@ -1,14 +1,13 @@
 export default function ({ name, price, emoji }) {
   return (
-    <li>
+    <div>
       {price > 1000 ? (
-        <h3>
-          {" "}
-          {emoji} {name} {price}{" "}
-        </h3>
+        <li>
+          {emoji} {name} {price}
+        </li>
       ) : (
         ""
       )}
-    </li>
+    </div>
   );
 }
