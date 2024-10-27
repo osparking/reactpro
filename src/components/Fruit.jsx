@@ -1,13 +1,7 @@
-export default function ({ name, price, emoji }) {
+export default function ({ soldout, name, price, emoji }) {
   return (
-    <>
-      {price > 1000 ? (
-        <li>
-          {emoji} {name} {price}
-        </li>
-      ) : (
-        ""
-      )}
-    </>
+    <li>
+      {emoji} {name} {price} {soldout ? "품절" : ""}
+    </li>
   );
 }
