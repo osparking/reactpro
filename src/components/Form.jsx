@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Form() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState({ lastName: "", firstName: "" });
 
   return (
     <div>
