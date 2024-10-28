@@ -17,6 +17,7 @@ export default function Form() {
           type="text"
           value={name.firstName}
         />
+        <button>제출</button>
       </form>
     </div>
   );
