@@ -2,7 +2,10 @@ import { useState } from "react";
 
 export default function Form() {
   const [name, setName] = useState({ lastName: "", firstName: "" });
-  console.log(name.lastName);
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
   return (
     <div>
       {name.lastName} - {name.firstName}
@@ -17,7 +20,7 @@ export default function Form() {
           type="text"
           value={name.firstName}
         />
-        <button>제출</button>
+        <button onClick={(e) => handleSubmit(e)}>제출</button>
       </form>
     </div>
   );
