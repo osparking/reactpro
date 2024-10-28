@@ -9,13 +9,7 @@ export default function Form() {
   return (
     <div>
       <form>
-        <input
-          onChange={function demo(e) {
-            return handleChange(e);
-          }}
-          type="text"
-          value={name}
-        />
+        <input onChange={(e) => handleChange(e)} type="text" value={name} />
       </form>
     </div>
   );
