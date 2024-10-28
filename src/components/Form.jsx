@@ -5,6 +5,7 @@ export default function Form() {
   console.log(name.lastName);
   return (
     <div>
+      {name.lastName} - {name.firstName}
       <form>
         <input
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
